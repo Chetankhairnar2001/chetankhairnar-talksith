@@ -12,9 +12,13 @@
         --primary:rgb(209, 228, 36);
     }
     header{
-        background-image: url(images/starwar1.webp);
+        background-image: url(images/star2.jpg);
         background-size: cover;
-        z-index: 10;
+        background-attachment: fixed;
+        height: 100vh;
+        z-index: -1;
+        left: 0;top: 0;
+        opacity: 0.5;
     }
 
     nav {
