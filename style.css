@@ -11,6 +11,12 @@
     :root{
         --primary:rgb(209, 228, 36);
     }
+    header{
+        background-image: url(images/starwar1.webp);
+        background-size: cover;
+        z-index: 10;
+    }
+
     nav {
         background-color: var(--primary);
         text-align: center;
