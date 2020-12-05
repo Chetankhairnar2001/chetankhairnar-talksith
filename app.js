@@ -4,18 +4,18 @@ var outputtext=document.querySelector("outputtxt");
 
 
 var urlforwakanda="https://api.funtranslations.com/translate/sith.json";
-function translateurl(text){
-    return urlforwakanda +"?text="+text;
-}
+// function translateurl(text){
+//     return urlforwakanda +"?text="+text;
+// }
+// console.log(outputtext);
+// function clickme(){
+//     var input=inputtext.value;
 
-function clickme(){
-    var input=inputtext.value;
+//    fetch(translateurl(input))
+//    .then(resp =>resp.json())
+//    .then(json =>{
+//        var translatetxt=json.contents.translated;
+//        outputtext.innerText=translatetxt; })
+// };
 
-   fetch(translateurl(input))
-   .then(resp =>resp.json())
-   .then(json =>{
-       var translatetxt=json.contents.translated;
-       outputtext.innerText=translatetxt; })
-};
-
-translatebtn.addEventListener("click",clickme);
+// translatebtn.addEventListener("click",clickme);
