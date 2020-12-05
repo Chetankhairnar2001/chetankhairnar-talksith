@@ -11,13 +11,15 @@
     :root{
         --primary:rgb(209, 228, 36);
     }
-    header{
+    .mainit{
+       width: 100%;
         background-image: url(images/star2.jpg);
         background-size: cover;
         background-attachment: fixed;
         height: 100vh;
         z-index: -1;
         left: 0;top: 0;
+        right: 0;
         opacity: 0.5;
     }
 
