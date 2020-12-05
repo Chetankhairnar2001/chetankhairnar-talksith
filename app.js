@@ -2,8 +2,12 @@ var inputtext=document.querySelector("#inputtxt");
 var translatebtn=document.querySelector("#inputbtn");
 var outputtext=document.querySelector("outputtxt");
 
+var input=inputtext.value;
 
 var urlforwakanda="https://api.funtranslations.com/translate/sith.json";
+translatebtn.addEventListener("click",function clickme(){
+    outputtext.innerText=input;
+});
 // function translateurl(text){
 //     return urlforwakanda +"?text="+text;
 // }
@@ -19,3 +23,8 @@ var urlforwakanda="https://api.funtranslations.com/translate/sith.json";
 // };
 
 // translatebtn.addEventListener("click",clickme);
+
+// translatebtn.addEventListener("click",translate);
+// function translate(){
+//      fetch(urlforwakanda+"?text="+input).then(resp=>resp.json()).then(sith=>console.log(sith));
+// }
