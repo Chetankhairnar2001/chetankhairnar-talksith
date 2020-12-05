@@ -12,7 +12,7 @@ function clickme(){
 
    fetch(translateurl(input)).then(resp =>resp.json())
    .then(json =>{ var translatetxt=json.contents.translated;
-       outputtext.innerText=translatetxt; })
+       outputtext.innerText=translatetxt })
 };
 
 translatebtn.addEventListener("click",clickme);

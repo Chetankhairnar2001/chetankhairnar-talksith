@@ -9,25 +9,42 @@
     font-family: 'Yeon Sung', cursive;
     }
     :root{
-        --primary:rgb(209, 228, 36);
+        --primary:rgb(209, 100, 114);
     }
     .mainit{
-       width: 100%;
+    
         background-image: url(images/star2.jpg);
+        /* background-attachment: fixed; */
         background-size: cover;
-        background-attachment: fixed;
+        background-position: center;
         height: 100vh;
-        z-index: -1;
-        left: 0;top: 0;
+        position: fixed;
+        left: 0;
         right: 0;
-        opacity: 0.5;
+        top: 0;
+        z-index:-1 ;
     }
 
     nav {
-        background-color: var(--primary);
+        color: white;
         text-align: center;
         width: 100%;
     }
+    .navigation{
+        font-size: 2.5rem;
+         padding: 1rem;
+         font-weight: bolder;
+        animation: animate 4s linear infinite;
+    }
+    @keyframes animate{
+        0%{
+            color: red;
+        }
+        100%{
+            /* color: red; */
+        }
+    }
+    
         .main{
             margin: auto;
             max-width: 80%;
@@ -39,15 +56,18 @@
             display: block;
             padding: 1rem;
             margin: 1rem;
+            border: 2px solid white;
+            background-color:rgb(199, 214, 236);
+            border-radius: 2rem;
         }
         #inputbtn{
             background-color: var(--primary);
             cursor: pointer;
-            border-radius: 0.5rem;
+            border-radius: 2rem;
             font-family: 'Yeon Sung', cursive;
         }
         #inputbtn:hover{
-            border-style:dashed;
+            background-color: red;
         }
 
         #outputtxt{
@@ -57,8 +77,10 @@
             padding: 1rem;
             margin: 1rem;
             margin-top: 0rem;
-            border: 1px solid black;
-            overflow: scroll;
+            border: 2px solid white;
+            border-radius: 2rem;
+            background-color:rgb(199, 214, 236);
+            /* overflow: scroll; */
         }
         
         footer{
@@ -66,7 +88,7 @@
             bottom: 0;
             width: 100%;
             padding: 1rem;
-            background-color: var(--primary);
+            /* background-color: var(--primary); */
             text-align: center;
         }
         
@@ -76,9 +98,7 @@
             font-size: 1.3rem;
         }
 
-        .para{
-            padding: 0rem 1rem;
-            font-size: 1.3rem;
-            width: 70%;
+        .details{
+             color: rgb(53, 231, 53);
         }
 
